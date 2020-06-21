@@ -1,5 +1,8 @@
 import React from 'react';
 
+/* Utils */
+import { format } from 'date-fns'
+
 /* Styles */
 import { ArticleStyled } from './style'
 
@@ -16,16 +19,16 @@ const Article = ({ date, author, comments, title, content }: IProps): JSX.Elemen
       <ArticleStyled>
 
          <div className="details">
-            <p>{date.toString()}</p>
-            <p>By: <span>{author}</span></p>
+            <p>{format(date, 'PPPP')}</p>
+            <p>By <span className="author">{author}</span></p>
             <p>{comments.length} <span>comments</span></p>
          </div>
 
          <div className="content">
-            <h2>{title}</h2>
+            <h2 className="title">{title}</h2>
             <p>{content}</p>
+            <a href="/">Read more</a>
          </div>
-
       </ArticleStyled>
    )
 }
