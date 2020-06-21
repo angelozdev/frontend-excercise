@@ -10,7 +10,7 @@ export const NavItemStyled = styled.li`
    user-select: none;
 
    &.active {
-      color: var(--background);
+      color: var(--bg);
       background: var(--color-primary);
    }
 `

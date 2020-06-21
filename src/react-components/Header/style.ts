@@ -13,8 +13,8 @@ export const HeaderStyled = styled.header`
       & ul {
          display: flex;
          justify-content: space-around;
-         background-color: var(--background-dark);
-         border-radius: .5rem;
+         background-color: var(--bg-dark);
+         border-radius: var(--border-radius);
          overflow: hidden;
       }
    }

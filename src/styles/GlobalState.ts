@@ -4,9 +4,12 @@ export const GlobalState = createGlobalStyle`
    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
    :root {
-      --background: #eee;
-      --background-dark: #ddd;
+      --bg: #eee;
+      --bg-dark: #ddd;
+      --bg-light: white;
       --color-primary: brown;
+      --color-secondary: gray;
+      --border-radius: .5rem;
    }
 
    *, *::after, *::before {
@@ -17,7 +20,7 @@ export const GlobalState = createGlobalStyle`
       margin : 0;
       padding: 0;
       font-family: 'Raleway', sans-serif;
-      background-color: var(--background);
+      background-color: var(--bg);
    }
 
    #root {
