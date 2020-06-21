@@ -4,6 +4,7 @@ import React, { Fragment } from 'react';
 import Header from '../react-components/Header';
 import FeaturedPage from '../react-components/FeaturedPage';
 import ListOfArticles from '../react-components/ListOfArticles';
+import Footer from '../react-components/Footer';
 
 const Home = (): JSX.Element => {
    return (
@@ -15,6 +16,7 @@ const Home = (): JSX.Element => {
             img="https://images.unsplash.com/photo-1590949527573-7ca0301ab7ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=708&q=80"
          />
          <ListOfArticles />
+         <Footer />
       </Fragment>
    )
 }

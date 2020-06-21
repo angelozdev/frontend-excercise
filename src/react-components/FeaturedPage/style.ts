@@ -37,6 +37,7 @@ export const FeaturedPageStyled = styled.article`
          padding: .5rem;
          object-fit: cover;
          border: 1px solid var(--bg-dark);
+         -webkit-user-drag: none;
       }
    }
 `
