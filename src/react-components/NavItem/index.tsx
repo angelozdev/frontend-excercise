@@ -2,6 +2,7 @@ import React from 'react';
 
 /* Styles */
 import { NavItemStyled } from './style'
+import { NavLink } from 'react-router-dom';
 
 interface IProps {
    title: string
@@ -10,7 +11,9 @@ interface IProps {
 const NavItem = ({ title }: IProps) => {
    return (
       <NavItemStyled>
-         {title}
+         <NavLink to={`/${title}`}>
+            {title}
+         </NavLink>
       </NavItemStyled>
    )
 }

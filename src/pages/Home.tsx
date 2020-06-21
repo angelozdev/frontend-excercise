@@ -17,14 +17,12 @@ const Home = (): JSX.Element => {
    console.log(articles);
    return (
       <Fragment>
-         <Header />
          <FeaturedPage
             title={articles[randomNumber].title}
             description={articles[randomNumber].description}
             img={articles[randomNumber].img}
          />
          <ListOfArticles />
-         <Footer />
       </Fragment>
    )
 }

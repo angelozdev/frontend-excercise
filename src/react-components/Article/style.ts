@@ -10,7 +10,7 @@ export const ArticleStyled = styled.article`
    }
 
    .details {
-      width: 30%;
+      width: 20%;
       padding-right: 1rem;
 
       & .author {
@@ -20,7 +20,7 @@ export const ArticleStyled = styled.article`
    }
 
    .content {
-      width: 70%;
+      width: 80%;
 
       & .title {
          color: var(--color-primary);

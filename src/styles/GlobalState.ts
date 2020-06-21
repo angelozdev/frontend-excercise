@@ -25,6 +25,10 @@ export const GlobalState = createGlobalStyle`
 
    #root {
       padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      min-height: 100vh;
    }
 
    h1, h2, h3, h4, h5, h6 {
