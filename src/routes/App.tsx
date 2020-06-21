@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react';
+
+/* Components */
+import Home from '../pages/Home'
 
 const App = () => {
    return (
-      <div>
-         <h1>Hola Mundo con React</h1>
-      </div>
+      <Fragment>
+         <Home />
+      </Fragment>
    )
 }
 
