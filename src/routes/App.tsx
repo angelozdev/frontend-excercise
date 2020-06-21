@@ -1,14 +1,18 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 /* Components */
-import Home from '../pages/Home'
+import Home from '../pages/Home';
+
+/* Redux */
+import { Provider } from 'react-redux';
+import { store } from '../redux/store'
 
 const App = () => {
    return (
-      <Fragment>
+      <Provider store={store}>
          <Home />
-      </Fragment>
+      </Provider>
    )
 }
 
-export default App
+export default App;

@@ -11,10 +11,10 @@ interface IProps {
    author: string,
    comments: Array<string>,
    title: string,
-   content: string
+   description: string
 }
 
-const Article = ({ date, author, comments, title, content }: IProps): JSX.Element => {
+const Article = ({ date, author, comments, title, description }: IProps): JSX.Element => {
    return (
       <ArticleStyled>
 
@@ -26,7 +26,7 @@ const Article = ({ date, author, comments, title, content }: IProps): JSX.Elemen
 
          <div className="content">
             <h2 className="title">{title}</h2>
-            <p>{content}</p>
+            <p>{description}</p>
             <a href="/">Read more</a>
          </div>
       </ArticleStyled>
