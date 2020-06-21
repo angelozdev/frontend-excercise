@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const FeaturedPageStyled = styled.article`
    width: 100%;
    display: flex;
-   flex-direction: row;
-   align-items: center;
+   flex-direction : row;
+   align-items    : center;
    justify-content: space-between;
    padding: 1rem;
    border-radius: var(--border-radius);
@@ -27,17 +27,16 @@ export const FeaturedPageStyled = styled.article`
 
 
    figure {
-      width: 30%;
+      width : 30%;
       height: 100%;
-      margin : 0;
+      margin: 0;
 
       & img {
          width : 100%;
          height: 100%;
-         right : 0;
+         padding: .5rem;
          object-fit: cover;
          border: 1px solid var(--bg-dark);
-         padding: .5rem;
       }
    }
 `
