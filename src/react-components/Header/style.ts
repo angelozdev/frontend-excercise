@@ -11,6 +11,10 @@ export const HeaderStyled = styled.header`
       width: 100%;
       overflow: scroll;
 
+      &::-webkit-scrollbar{
+         display: none;
+      }
+
       & ul {
          min-width: 400px;
          display: flex;
