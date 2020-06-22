@@ -14,6 +14,9 @@ import Contact from '../pages/Contact';
 import { Provider } from 'react-redux';
 import { store } from '../redux/store';
 
+/* Styles */
+import { GlobalState } from '../styles/GlobalState'
+
 import {
    BrowserRouter as Router,
    Route,
@@ -25,6 +28,7 @@ const App = () => {
    return (
       <Provider store={store}>
          <Router>
+            <GlobalState />
             <Layout>
                <Switch>
                   <Route extact path="/Home" component={Home} />
