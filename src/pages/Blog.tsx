@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+
+/* Components */
+import Wrapper from '../react-components/Wrapper';
 
 const Blog = () => {
    return (
-      <div>
+      <Wrapper>
          <h1>My blog</h1>
-      </div>
+      </Wrapper>
    )
 }
 

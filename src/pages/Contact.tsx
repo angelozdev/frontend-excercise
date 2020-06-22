@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+
+/* Components */
+import Wrapper from '../react-components/Wrapper'
 
 const Contact = () => {
    return (
-      <div>
+      <Wrapper>
          <h1>Contact</h1>
-      </div>
+      </Wrapper>
    )
 }
 
