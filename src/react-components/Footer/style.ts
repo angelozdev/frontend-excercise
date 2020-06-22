@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../styles/breakpoints'
 
 export const FooterStyled = styled.footer`
    display: flex;
@@ -11,5 +12,9 @@ export const FooterStyled = styled.footer`
 
    svg {
       margin-right: 1rem;
+   }
+
+   @media ${device.mobileL}{
+      flex-direction: column;
    }
 `

@@ -9,8 +9,10 @@ export const HeaderStyled = styled.header`
 
    nav {
       width: 100%;
+      overflow: scroll;
 
       & ul {
+         min-width: 400px;
          display: flex;
          justify-content: space-around;
          background-color: var(--bg-dark);

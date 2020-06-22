@@ -31,7 +31,7 @@ export const GlobalState = createGlobalStyle`
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-      min-height: 100vh;
+      min-height: calc(100vh - 2rem);
    }
 
    h1, h2, h3, h4, h5, h6 {

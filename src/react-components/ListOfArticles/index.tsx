@@ -26,4 +26,4 @@ const ListOfArticles = () => {
    )
 }
 
-export default ListOfArticles;
+export default React.memo(ListOfArticles);

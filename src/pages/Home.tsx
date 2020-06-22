@@ -8,21 +8,26 @@ import ListOfArticles from '../react-components/ListOfArticles';
 import { useSelector } from 'react-redux';
 import { IIntitialState } from "../redux/store";
 
-const Home = (): JSX.Element => {
-   const articles = useSelector((state: IIntitialState) => state.articles);
-   const randomNumber: number = Math.floor(Math.random() * articles.length);
+interface IProps {
+   location: {
+      pathname: string
+   }
+}
 
-   console.log(articles);
+const Home = ({}: IProps): JSX.Element => {
+   const articles = useSelector(({ articles }: IIntitialState) => articles);
    return (
       <Fragment>
          <FeaturedPage
-            title={articles[randomNumber].title}
-            description={articles[randomNumber].description}
-            img={articles[randomNumber].img}
+            title={articles[0].title}
+            description={articles[0].description}
+            img={articles[0].img}
          />
          <ListOfArticles />
       </Fragment>
    )
 }
 
-export default Home;
+export default React.memo(Home, (prev, next) => {
+   return prev.location.pathname === next.location.pathname
+});

@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const { GenerateSW } = require('workbox-webpack-plugin');
 
 module.exports = {
    entry: './src/index.tsx',
@@ -48,6 +49,18 @@ module.exports = {
             start_url: '.',
             lang: 'es-Es'
          }
+      }),
+      new GenerateSW({
+         navigateFallback: '/index.html',
+         runtimeCaching: [
+            {
+               urlPattern: new RegExp('http://lorempixel.com/'),
+               handler: 'CacheFirst',
+               options: {
+                  cacheName: 'images'
+               }
+            }
+         ]
       })
    ]
 }

@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { device } from "../../styles/breakpoints";
+
 
 export const FeaturedPageStyled = styled.article`
    width: 100%;
@@ -23,6 +25,10 @@ export const FeaturedPageStyled = styled.article`
       & h2 {
          color: var(--color-primary);
       }
+
+      & p {
+         text-align: justify;
+      }
    }
 
 
@@ -38,6 +44,20 @@ export const FeaturedPageStyled = styled.article`
          object-fit: cover;
          border: 1px solid var(--bg-dark);
          -webkit-user-drag: none;
+      }
+   }
+
+   @media ${device.tablet}{
+      flex-direction: column;
+
+      .content, figure {
+         width: 100%;
+      }
+   }
+
+   @media ${device.mobileM}{
+      .content h2 {
+         font-size: 1.3rem;
       }
    }
 `

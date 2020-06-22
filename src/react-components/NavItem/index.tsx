@@ -11,7 +11,7 @@ interface IProps {
 const NavItem = ({ title }: IProps) => {
    return (
       <NavItemStyled>
-         <NavLink to={`/${title}`}>
+         <NavLink exact to={`/${title === 'Home' ? '' : title}`}>
             {title}
          </NavLink>
       </NavItemStyled>
