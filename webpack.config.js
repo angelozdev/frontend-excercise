@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
    entry: './src/index.tsx',
@@ -35,6 +36,18 @@ module.exports = {
       new HtmlWebpackPlugin({
          filename: 'index.html',
          template: './public/index.html'
+      }),
+      new FaviconsWebpackPlugin({
+         logo: './src/assets/icon.png',
+         favicons: {
+            appName: 'Frontend Exercise',
+            appShortName: 'FronExer',
+            display: 'standalone',
+            appDescription: 'This a frontend exercise',
+            scope: '/',
+            start_url: '.',
+            lang: 'es-Es'
+         }
       })
    ]
 }

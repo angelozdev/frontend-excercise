@@ -1,13 +1,13 @@
 {
   "name": "react-exercise",
   "version": "1.0.0",
-  "description": "",
+  "description": "This a frontend exercise",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production"
   },
-  "keywords": [],
+  "keywords": ["ReactJS", "TypeScript", "Frontend", "Exercise"],
   "author": "Angelo Zambrano <angelozam17@gmail.com>",
   "license": "MIT",
   "dependencies": {
