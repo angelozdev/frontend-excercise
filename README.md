@@ -5,7 +5,7 @@
 This image resembles a basic website. You will need basic understanding of HTML and CSS in order to achieve this.
 ## Goals
 
- - [x] Replicate the website 
+ - [x] Replicate the website
 ## Specifications
 - The replica must be as exact as possible, with the correct color and images.
 - You’re only allowed to use HTML,CSS and JS, you cannot use any Framework or libraries.

@@ -25,7 +25,7 @@ const initialState: IIntitialState = {
          author: faker.name.findName(),
          date: faker.date.past(2020),
          comments: new Array(faker.random.number(20)).fill(''),
-         img: faker.image.image()
+         img: 'http://lorempixel.com/640/480/sports/'
       },
       {
          id: faker.random.number(100),
@@ -34,7 +34,7 @@ const initialState: IIntitialState = {
          author: faker.name.findName(),
          date: faker.date.past(2020),
          comments: new Array(faker.random.number(20)).fill(''),
-         img: faker.image.image()
+         img: 'http://lorempixel.com/640/480/sports/'
       },
       {
          id: faker.random.number(100),
@@ -43,7 +43,7 @@ const initialState: IIntitialState = {
          author: faker.name.findName(),
          date: faker.date.past(2020),
          comments: new Array(faker.random.number(20)).fill(''),
-         img: faker.image.image()
+         img: 'http://lorempixel.com/640/480/sports/'
       },
       {
          id: faker.random.number(100),
@@ -52,7 +52,7 @@ const initialState: IIntitialState = {
          author: faker.name.findName(),
          date: faker.date.past(2020),
          comments: new Array(faker.random.number(20)).fill(''),
-         img: faker.image.image()
+         img: 'http://lorempixel.com/640/480/sports/'
       }
    ]
 }
