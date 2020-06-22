@@ -1,10 +1,8 @@
 import React, { Fragment } from 'react';
 
 /* Components */
-import Header from '../react-components/Header';
 import FeaturedPage from '../react-components/FeaturedPage';
 import ListOfArticles from '../react-components/ListOfArticles';
-import Footer from '../react-components/Footer';
 
 /* Redux */
 import { useSelector } from 'react-redux';

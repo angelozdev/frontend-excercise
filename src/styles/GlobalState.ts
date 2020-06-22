@@ -25,6 +25,9 @@ export const GlobalState = createGlobalStyle`
 
    #root {
       padding: 1rem;
+   }
+
+   #root .wrapper {
       display: flex;
       justify-content: space-between;
       flex-direction: column;

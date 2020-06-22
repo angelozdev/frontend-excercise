@@ -1,19 +1,20 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Header from '../Header'
 import Footer from '../Footer'
+import Wrapper from '../Wrapper'
 
 interface IProps {
-   children: JSX.Element | JSX.Element[]
+   children: JSX.Element
 }
 
-const Layout = ({children}: IProps): JSX.Element => {
+const Layout = ({ children }: IProps): JSX.Element => {
    return (
-      <Fragment>
+      <Wrapper>
          <Header />
             {children}
          <Footer />
-      </Fragment>
+      </Wrapper>
    )
 }
 
-export default Layout
+export default Layout;

@@ -9,7 +9,7 @@ interface IProps {
 
 const Wrapper = ({ children }: IProps) => {
    return (
-      <WrapperStyled>
+      <WrapperStyled className="wrapper">
          {children}
       </WrapperStyled>
    )
