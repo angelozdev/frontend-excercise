@@ -21,24 +21,23 @@ import {
    BrowserRouter as Router,
    Route,
    Switch,
-   Redirect
 } from "react-router-dom";
 
 const App = () => {
    return (
       <Provider store={store}>
          <Router>
-            <GlobalState />
             <Layout>
                <Switch>
-                  <Route extact path="/Home" component={Home} />
-                  <Route extact path="/About" component={About} />
-                  <Route extact path="/Contact" component={Contact} />
-                  <Route extact path="/Blog" component={Blog} />
-                  <Route extact path="/Portfolio" component={Portfolio} />
-                  <Redirect exact from="/" to="/Home" />
+                  <Route exact path="/" component={Home} />
+                  <Route exact path="/Home" component={Home} />
+                  <Route exact path="/About" component={About} />
+                  <Route exact path="/Contact" component={Contact} />
+                  <Route exact path="/Blog" component={Blog} />
+                  <Route exact path="/Portfolio" component={Portfolio} />
                </Switch>
             </Layout>
+            <GlobalState />
          </Router>
       </Provider>
    )
