@@ -7,7 +7,12 @@
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production"
   },
-  "keywords": ["ReactJS", "TypeScript", "Frontend", "Exercise"],
+  "keywords": [
+    "ReactJS",
+    "TypeScript",
+    "Frontend",
+    "Exercise"
+  ],
   "author": "Angelo Zambrano <angelozam17@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -22,6 +27,7 @@
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.3",
     "@babel/polyfill": "^7.10.1",
     "@babel/preset-env": "^7.10.3",
     "@babel/preset-react": "^7.10.1",
